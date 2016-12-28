@@ -1,11 +1,19 @@
-
-// var x = new BinarySearch([1,2,3,4], 2);
-// console.log(x.search());
-
+/***
+ * BinarySearch. Performs a binary search on an array for a specific value.
+ */
 class BinarySearch {
+  /***
+   * Array, Value to find
+   * @param list
+   * @param item
+   */
 	constructor(list, item) {
 		this.update(list, item);
 	}
+  /***
+   * Performs a on the provided list and item. Returns int (location) or null.
+   * @returns {*}
+   */
 	search() {
 		while (this.low <= this.high) {
 			this.mid = (this.low + this.high);
@@ -21,6 +29,11 @@ class BinarySearch {
 		}
 		return null;
 	}
+  /***
+   * Setter for array & value
+   * @param l
+   * @param i
+   */
 	update(l, i) {
 		this.list = l;
 		this.item = i;
@@ -29,5 +42,4 @@ class BinarySearch {
 		this.guess;
 	}
 }
-
 module.exports = BinarySearch;
