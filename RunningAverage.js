@@ -6,7 +6,6 @@ class RunningAverage {
   constructor(list) {
     this.data = list || [];
   }
-
   /***
    * Calculates the current running average of the provided list.
    * @returns {number|*}
