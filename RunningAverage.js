@@ -24,7 +24,7 @@ class RunningAverage {
     return avg;
   }
   /***
-   * Add numerics to the list.
+   * Add numeric to the list.
    * @param numeric
    */
   add(numeric) {
